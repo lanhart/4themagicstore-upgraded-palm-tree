@@ -1,0 +1,59 @@
+@media screen and (max-width: 600px) {
+    .mobile_trigger{
+        display: flex !important;
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .mobile_trigger span{
+        width: 20px;
+        border-bottom: 3px solid $main-color;
+        margin: 2px 0px;
+    }
+
+    .header-right{
+        display: none !important;
+        &.opened{
+            display: flex !important;
+            position: fixed;
+            flex-direction: column;
+            top: 78px;
+            background: $background-color;
+            width: 70px;
+            left: 0px;
+            align-items: center;
+            z-index: 1000000;
+            height: calc(100% - 78px);
+            justify-content: space-between;
+            
+            > div{
+                margin: 10px 0px;
+            }
+    
+            .header-right_block{
+                margin-right: 0px;
+            }
+        }
+    }
+
+    logo.logo {
+        flex-grow: 1;
+    }
+
+    .shop-listing {
+        align-items: center;
+    }
+
+    .landing-page{
+        flex-direction: column;
+        padding: 0px 10px;
+        background: none;
+        align-items: center;
+        width: calc(100% - 20px);
+    }
+
+    .landing-page img{
+        max-width: 80%;
+        padding-left: 10%;
+    }    
+}

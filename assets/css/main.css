@@ -1,0 +1,302 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.shop-listing {
+  padding: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.shop-listing_item {
+  display: block;
+  width: 252px;
+  text-decoration: none;
+  margin: 20px 20px;
+}
+
+.shop-listing_item_img_box {
+  width: 100%;
+}
+
+.shop-listing_item_img_box img {
+  width: 100%;
+  height: auto;
+}
+
+.shop-listing_item_img_box_percent {
+  margin-top: -29px;
+  display: block;
+  padding: 5px 2px;
+  width: 60px;
+  background: #f9f9f9;
+  z-index: 1000;
+  position: relative;
+  top: -8px;
+  left: 8px;
+  border-radius: 15px;
+  text-align: center;
+  color: #ba10a4;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.shop-listing_item_img_box_percent::before {
+  content: "-";
+}
+
+.shop-listing_item_img_box_percent::after {
+  content: "%";
+}
+
+.shop-listing_item_text_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shop-listing_item_text_box_price_default {
+  font-size: 25px;
+  color: #000;
+  font-size: 18px;
+}
+
+.shop-listing_item_text_box_price_previous {
+  color: #8B8B8B;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.shop-listing_item_text_box_price {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.shop-listing_item_text_box_price > *::after {
+  content: "₽";
+}
+
+.shop-listing_item_text_box_title {
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.shop-listing_item_text_box_rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop-listing_item_text_box_rating img {
+  width: 20px;
+  margin: 0px 2px;
+}
+
+.shop-listing_item_text_box_delivery {
+  color: #999;
+  font-size: 14px;
+}
+
+.shop-listing_item_text_box_delivery strong {
+  color: #000;
+}
+
+.shop-listing_item_text_box_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop-listing_item_text_box_flex_2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.shop-listing_item_text_box_flex_2 ashpbtn {
+  background: #ba10a4;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  border-radius: 5000px;
+}
+
+.shop-listing_item_text_box_flex_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile_trigger {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    padding: 10px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mobile_trigger span {
+    width: 20px;
+    border-bottom: 3px solid #BA10A4;
+    margin: 2px 0px;
+  }
+  .header-right {
+    display: none !important;
+  }
+  .header-right.opened {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 78px;
+    background: #fff;
+    width: 70px;
+    left: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1000000;
+    height: calc(100% - 78px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-right.opened > div {
+    margin: 10px 0px;
+  }
+  .header-right.opened .header-right_block {
+    margin-right: 0px;
+  }
+  logo.logo {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .shop-listing {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landing-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 10px;
+    background: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(100% - 20px);
+  }
+  .landing-page img {
+    max-width: 80%;
+    padding-left: 10%;
+  }
+}
+
+header.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #F0F0F0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #fff;
+  z-index: 1000;
+  top: 0px;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-right_block {
+  margin-right: 35px;
+  text-align: center;
+}
+
+.header-right_block img {
+  width: 25px;
+  height: 25px;
+}
+
+.header-right_block_text {
+  background: #F9F9F9;
+  padding: 2px 10px;
+  max-width: 65px;
+  border-radius: 15px;
+  width: 100vh;
+  text-align: center;
+}
+
+.mobile_trigger {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
