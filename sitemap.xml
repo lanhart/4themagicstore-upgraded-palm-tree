@@ -1,7 +1,19 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://magic-store.tk/</loc>
-        <lastmod>2022-03-20T06:51:03Z</lastmod>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://vanekdote.weebys.space/</loc>
+  <lastmod>2022-01-09T09:22:10+00:00</lastmod>
+</url>
+<url>
+  <loc>https://vanekdote.weebys.space/blog/o-navike-dai-anekdot</loc>
+  <lastmod>2022-02-19T13:29:15+00:00</lastmod>
+</url>
+<url>
+  <loc>https://vanekdote.weebys.space/blog/</loc>
+  <lastmod>2022-02-19T13:29:15+00:00</lastmod>
+</url>
 </urlset>
